@@ -1,0 +1,13 @@
+# Configuração do pipeline de IA
+model: resnet18 # opções: resnet18, efficientnet_b0, vit_b_16
+num_classes: 10
+batch_size: 32
+epochs: 100
+learning_rate: 0.001
+patience: 7
+scheduler: reduce_on_plateau
+augment: true
+multi_gpu: true
+log_csv: true
+data_dir: ./data
+data_type: image # opções: image, text, tabular
